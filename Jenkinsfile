@@ -4,6 +4,10 @@ pipeline {
     triggers {
         githubPush()
     }
+
+    tools {
+        nodejs "Jenkins NodeJs"
+    }    
     
     stages {        
         stage('Run Newman Tests') {
